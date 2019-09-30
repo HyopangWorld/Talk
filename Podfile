@@ -17,7 +17,7 @@ target 'Talk' do
     # Pods for testing
   end
 
-pod 'SnapKit', '~> 3.2.0'
+pod 'SnapKit', '~> 5.0.0'
 pod 'Firebase/Core'
 pod 'Firebase/RemoteConfig'
 
