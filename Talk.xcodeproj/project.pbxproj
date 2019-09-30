@@ -17,6 +17,10 @@
 		24C94D792341DBDA001E23AB /* TalkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C94D782341DBDA001E23AB /* TalkTests.swift */; };
 		24C94D842341DBDA001E23AB /* TalkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C94D832341DBDA001E23AB /* TalkUITests.swift */; };
 		24C94D922341DD3C001E23AB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 24C94D912341DD3C001E23AB /* GoogleService-Info.plist */; };
+		24C94D942341E576001E23AB /* RemoteConfigDefaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = 24C94D932341E576001E23AB /* RemoteConfigDefaults.plist */; };
+		24C94D992341E84E001E23AB /* UIColor+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C94D982341E84E001E23AB /* UIColor+Utils.swift */; };
+		24C94D9C2341E9DD001E23AB /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C94D9A2341E9DD001E23AB /* LoginViewController.swift */; };
+		24C94DA02341F0ED001E23AB /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C94D9F2341F0ED001E23AB /* BaseViewController.swift */; };
 		AAFD0BC0749540B7A1614C0A /* Pods_TalkTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF0C6315632661F27E8796AD /* Pods_TalkTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -53,6 +57,10 @@
 		24C94D832341DBDA001E23AB /* TalkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TalkUITests.swift; sourceTree = "<group>"; };
 		24C94D852341DBDA001E23AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		24C94D912341DD3C001E23AB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		24C94D932341E576001E23AB /* RemoteConfigDefaults.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = RemoteConfigDefaults.plist; sourceTree = "<group>"; };
+		24C94D982341E84E001E23AB /* UIColor+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Utils.swift"; sourceTree = "<group>"; };
+		24C94D9A2341E9DD001E23AB /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		24C94D9F2341F0ED001E23AB /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		27090828F5EC7301BB555769 /* Pods-Talk.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Talk.release.xcconfig"; path = "Target Support Files/Pods-Talk/Pods-Talk.release.xcconfig"; sourceTree = "<group>"; };
 		67236F8E4D44FBC0B412A16E /* Pods-TalkTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TalkTests.debug.xcconfig"; path = "Target Support Files/Pods-TalkTests/Pods-TalkTests.debug.xcconfig"; sourceTree = "<group>"; };
 		893D1FD480157F9EE3D0104D /* Pods-TalkUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TalkUITests.release.xcconfig"; path = "Target Support Files/Pods-TalkUITests/Pods-TalkUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -116,10 +124,9 @@
 		24C94D622341DBDA001E23AB /* Talk */ = {
 			isa = PBXGroup;
 			children = (
+				24C94D952341E7F8001E23AB /* Source */,
 				24C94D912341DD3C001E23AB /* GoogleService-Info.plist */,
-				24C94D632341DBDA001E23AB /* AppDelegate.swift */,
-				24C94D652341DBDA001E23AB /* ViewController.swift */,
-				24C94D672341DBDA001E23AB /* Main.storyboard */,
+				24C94D932341E576001E23AB /* RemoteConfigDefaults.plist */,
 				24C94D6A2341DBDA001E23AB /* Assets.xcassets */,
 				24C94D6C2341DBDA001E23AB /* LaunchScreen.storyboard */,
 				24C94D6F2341DBDA001E23AB /* Info.plist */,
@@ -143,6 +150,35 @@
 				24C94D852341DBDA001E23AB /* Info.plist */,
 			);
 			path = TalkUITests;
+			sourceTree = "<group>";
+		};
+		24C94D952341E7F8001E23AB /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				24C94D9E2341E9E2001E23AB /* View */,
+				24C94D652341DBDA001E23AB /* ViewController.swift */,
+				24C94D632341DBDA001E23AB /* AppDelegate.swift */,
+				24C94D972341E830001E23AB /* Utils */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		24C94D972341E830001E23AB /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				24C94D982341E84E001E23AB /* UIColor+Utils.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		24C94D9E2341E9E2001E23AB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				24C94D9F2341F0ED001E23AB /* BaseViewController.swift */,
+				24C94D9A2341E9DD001E23AB /* LoginViewController.swift */,
+				24C94D672341DBDA001E23AB /* Main.storyboard */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		5A679102E546EB649445F0BD /* Pods */ = {
@@ -277,6 +313,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				24C94D6E2341DBDA001E23AB /* LaunchScreen.storyboard in Resources */,
+				24C94D942341E576001E23AB /* RemoteConfigDefaults.plist in Resources */,
 				24C94D922341DD3C001E23AB /* GoogleService-Info.plist in Resources */,
 				24C94D6B2341DBDA001E23AB /* Assets.xcassets in Resources */,
 				24C94D692341DBDA001E23AB /* Main.storyboard in Resources */,
@@ -390,6 +427,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24C94DA02341F0ED001E23AB /* BaseViewController.swift in Sources */,
+				24C94D9C2341E9DD001E23AB /* LoginViewController.swift in Sources */,
+				24C94D992341E84E001E23AB /* UIColor+Utils.swift in Sources */,
 				24C94D662341DBDA001E23AB /* ViewController.swift in Sources */,
 				24C94D642341DBDA001E23AB /* AppDelegate.swift in Sources */,
 			);

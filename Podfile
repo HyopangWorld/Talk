@@ -20,6 +20,6 @@ target 'Talk' do
 pod 'SnapKit', '~> 5.0.0'
 pod 'Firebase/Core'
 pod 'Firebase/RemoteConfig'
-
+pod 'TextFieldEffects'
 
 end
