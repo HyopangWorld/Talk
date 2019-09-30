@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>177470268428-j5mghppfcgsum7gsvslditcd7oe0q09l.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.177470268428-j5mghppfcgsum7gsvslditcd7oe0q09l</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAfkiQjEuc4gIHrTa58V-C7Kr_h3RSGMgg</string>
+	<key>GCM_SENDER_ID</key>
+	<string>177470268428</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.hyopangworld.Talk</string>
+	<key>PROJECT_ID</key>
+	<string>talk-820b6</string>
+	<key>STORAGE_BUCKET</key>
+	<string>talk-820b6.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:177470268428:ios:5cfe17e7d030ecf5a0ba29</string>
+	<key>DATABASE_URL</key>
+	<string>https://talk-820b6.firebaseio.com</string>
+</dict>
+</plist>

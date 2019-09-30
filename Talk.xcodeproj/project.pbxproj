@@ -1,0 +1,731 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		14942094D409994F1065506F /* Pods_Talk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14E0F05863EDE4CCFA0C3442 /* Pods_Talk.framework */; };
+		23A35EDC4A90F221CE58BCE1 /* Pods_TalkUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E78238A9E7FDB83BF29D0871 /* Pods_TalkUITests.framework */; };
+		24C94D642341DBDA001E23AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C94D632341DBDA001E23AB /* AppDelegate.swift */; };
+		24C94D662341DBDA001E23AB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C94D652341DBDA001E23AB /* ViewController.swift */; };
+		24C94D692341DBDA001E23AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24C94D672341DBDA001E23AB /* Main.storyboard */; };
+		24C94D6B2341DBDA001E23AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24C94D6A2341DBDA001E23AB /* Assets.xcassets */; };
+		24C94D6E2341DBDA001E23AB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24C94D6C2341DBDA001E23AB /* LaunchScreen.storyboard */; };
+		24C94D792341DBDA001E23AB /* TalkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C94D782341DBDA001E23AB /* TalkTests.swift */; };
+		24C94D842341DBDA001E23AB /* TalkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C94D832341DBDA001E23AB /* TalkUITests.swift */; };
+		24C94D922341DD3C001E23AB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 24C94D912341DD3C001E23AB /* GoogleService-Info.plist */; };
+		AAFD0BC0749540B7A1614C0A /* Pods_TalkTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF0C6315632661F27E8796AD /* Pods_TalkTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		24C94D752341DBDA001E23AB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 24C94D582341DBDA001E23AB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 24C94D5F2341DBDA001E23AB;
+			remoteInfo = Talk;
+		};
+		24C94D802341DBDA001E23AB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 24C94D582341DBDA001E23AB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 24C94D5F2341DBDA001E23AB;
+			remoteInfo = Talk;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		14E0F05863EDE4CCFA0C3442 /* Pods_Talk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Talk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		24C94D602341DBDA001E23AB /* Talk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Talk.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		24C94D632341DBDA001E23AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		24C94D652341DBDA001E23AB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		24C94D682341DBDA001E23AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		24C94D6A2341DBDA001E23AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		24C94D6D2341DBDA001E23AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		24C94D6F2341DBDA001E23AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		24C94D742341DBDA001E23AB /* TalkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TalkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		24C94D782341DBDA001E23AB /* TalkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TalkTests.swift; sourceTree = "<group>"; };
+		24C94D7A2341DBDA001E23AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		24C94D7F2341DBDA001E23AB /* TalkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TalkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		24C94D832341DBDA001E23AB /* TalkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TalkUITests.swift; sourceTree = "<group>"; };
+		24C94D852341DBDA001E23AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		24C94D912341DD3C001E23AB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		27090828F5EC7301BB555769 /* Pods-Talk.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Talk.release.xcconfig"; path = "Target Support Files/Pods-Talk/Pods-Talk.release.xcconfig"; sourceTree = "<group>"; };
+		67236F8E4D44FBC0B412A16E /* Pods-TalkTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TalkTests.debug.xcconfig"; path = "Target Support Files/Pods-TalkTests/Pods-TalkTests.debug.xcconfig"; sourceTree = "<group>"; };
+		893D1FD480157F9EE3D0104D /* Pods-TalkUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TalkUITests.release.xcconfig"; path = "Target Support Files/Pods-TalkUITests/Pods-TalkUITests.release.xcconfig"; sourceTree = "<group>"; };
+		89BDF3D55AE307C7E415D796 /* Pods-Talk.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Talk.debug.xcconfig"; path = "Target Support Files/Pods-Talk/Pods-Talk.debug.xcconfig"; sourceTree = "<group>"; };
+		B8B9769B3771B76C5EA63701 /* Pods-TalkTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TalkTests.release.xcconfig"; path = "Target Support Files/Pods-TalkTests/Pods-TalkTests.release.xcconfig"; sourceTree = "<group>"; };
+		BF0C6315632661F27E8796AD /* Pods_TalkTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TalkTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E78238A9E7FDB83BF29D0871 /* Pods_TalkUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TalkUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EEF7F43483D46F1CF6EC26E5 /* Pods-TalkUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TalkUITests.debug.xcconfig"; path = "Target Support Files/Pods-TalkUITests/Pods-TalkUITests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		24C94D5D2341DBDA001E23AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14942094D409994F1065506F /* Pods_Talk.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24C94D712341DBDA001E23AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAFD0BC0749540B7A1614C0A /* Pods_TalkTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24C94D7C2341DBDA001E23AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23A35EDC4A90F221CE58BCE1 /* Pods_TalkUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		24C94D572341DBDA001E23AB = {
+			isa = PBXGroup;
+			children = (
+				24C94D622341DBDA001E23AB /* Talk */,
+				24C94D772341DBDA001E23AB /* TalkTests */,
+				24C94D822341DBDA001E23AB /* TalkUITests */,
+				24C94D612341DBDA001E23AB /* Products */,
+				5A679102E546EB649445F0BD /* Pods */,
+				5BB4CC97888C3DC73602A2DA /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		24C94D612341DBDA001E23AB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				24C94D602341DBDA001E23AB /* Talk.app */,
+				24C94D742341DBDA001E23AB /* TalkTests.xctest */,
+				24C94D7F2341DBDA001E23AB /* TalkUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		24C94D622341DBDA001E23AB /* Talk */ = {
+			isa = PBXGroup;
+			children = (
+				24C94D912341DD3C001E23AB /* GoogleService-Info.plist */,
+				24C94D632341DBDA001E23AB /* AppDelegate.swift */,
+				24C94D652341DBDA001E23AB /* ViewController.swift */,
+				24C94D672341DBDA001E23AB /* Main.storyboard */,
+				24C94D6A2341DBDA001E23AB /* Assets.xcassets */,
+				24C94D6C2341DBDA001E23AB /* LaunchScreen.storyboard */,
+				24C94D6F2341DBDA001E23AB /* Info.plist */,
+			);
+			path = Talk;
+			sourceTree = "<group>";
+		};
+		24C94D772341DBDA001E23AB /* TalkTests */ = {
+			isa = PBXGroup;
+			children = (
+				24C94D782341DBDA001E23AB /* TalkTests.swift */,
+				24C94D7A2341DBDA001E23AB /* Info.plist */,
+			);
+			path = TalkTests;
+			sourceTree = "<group>";
+		};
+		24C94D822341DBDA001E23AB /* TalkUITests */ = {
+			isa = PBXGroup;
+			children = (
+				24C94D832341DBDA001E23AB /* TalkUITests.swift */,
+				24C94D852341DBDA001E23AB /* Info.plist */,
+			);
+			path = TalkUITests;
+			sourceTree = "<group>";
+		};
+		5A679102E546EB649445F0BD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				89BDF3D55AE307C7E415D796 /* Pods-Talk.debug.xcconfig */,
+				27090828F5EC7301BB555769 /* Pods-Talk.release.xcconfig */,
+				67236F8E4D44FBC0B412A16E /* Pods-TalkTests.debug.xcconfig */,
+				B8B9769B3771B76C5EA63701 /* Pods-TalkTests.release.xcconfig */,
+				EEF7F43483D46F1CF6EC26E5 /* Pods-TalkUITests.debug.xcconfig */,
+				893D1FD480157F9EE3D0104D /* Pods-TalkUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		5BB4CC97888C3DC73602A2DA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				14E0F05863EDE4CCFA0C3442 /* Pods_Talk.framework */,
+				BF0C6315632661F27E8796AD /* Pods_TalkTests.framework */,
+				E78238A9E7FDB83BF29D0871 /* Pods_TalkUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		24C94D5F2341DBDA001E23AB /* Talk */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 24C94D882341DBDA001E23AB /* Build configuration list for PBXNativeTarget "Talk" */;
+			buildPhases = (
+				107AC8E7ADFF511399ACE71A /* [CP] Check Pods Manifest.lock */,
+				24C94D5C2341DBDA001E23AB /* Sources */,
+				24C94D5D2341DBDA001E23AB /* Frameworks */,
+				24C94D5E2341DBDA001E23AB /* Resources */,
+				E64C277721E2218D87C80DFD /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Talk;
+			productName = Talk;
+			productReference = 24C94D602341DBDA001E23AB /* Talk.app */;
+			productType = "com.apple.product-type.application";
+		};
+		24C94D732341DBDA001E23AB /* TalkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 24C94D8B2341DBDA001E23AB /* Build configuration list for PBXNativeTarget "TalkTests" */;
+			buildPhases = (
+				888BBD94CC9A208011577B6F /* [CP] Check Pods Manifest.lock */,
+				24C94D702341DBDA001E23AB /* Sources */,
+				24C94D712341DBDA001E23AB /* Frameworks */,
+				24C94D722341DBDA001E23AB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				24C94D762341DBDA001E23AB /* PBXTargetDependency */,
+			);
+			name = TalkTests;
+			productName = TalkTests;
+			productReference = 24C94D742341DBDA001E23AB /* TalkTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		24C94D7E2341DBDA001E23AB /* TalkUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 24C94D8E2341DBDA001E23AB /* Build configuration list for PBXNativeTarget "TalkUITests" */;
+			buildPhases = (
+				16EAB6EDA0ED58B7BF1F3404 /* [CP] Check Pods Manifest.lock */,
+				24C94D7B2341DBDA001E23AB /* Sources */,
+				24C94D7C2341DBDA001E23AB /* Frameworks */,
+				24C94D7D2341DBDA001E23AB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				24C94D812341DBDA001E23AB /* PBXTargetDependency */,
+			);
+			name = TalkUITests;
+			productName = TalkUITests;
+			productReference = 24C94D7F2341DBDA001E23AB /* TalkUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		24C94D582341DBDA001E23AB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = HyowonKim;
+				TargetAttributes = {
+					24C94D5F2341DBDA001E23AB = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					24C94D732341DBDA001E23AB = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 24C94D5F2341DBDA001E23AB;
+					};
+					24C94D7E2341DBDA001E23AB = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 24C94D5F2341DBDA001E23AB;
+					};
+				};
+			};
+			buildConfigurationList = 24C94D5B2341DBDA001E23AB /* Build configuration list for PBXProject "Talk" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 24C94D572341DBDA001E23AB;
+			productRefGroup = 24C94D612341DBDA001E23AB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				24C94D5F2341DBDA001E23AB /* Talk */,
+				24C94D732341DBDA001E23AB /* TalkTests */,
+				24C94D7E2341DBDA001E23AB /* TalkUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		24C94D5E2341DBDA001E23AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24C94D6E2341DBDA001E23AB /* LaunchScreen.storyboard in Resources */,
+				24C94D922341DD3C001E23AB /* GoogleService-Info.plist in Resources */,
+				24C94D6B2341DBDA001E23AB /* Assets.xcassets in Resources */,
+				24C94D692341DBDA001E23AB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24C94D722341DBDA001E23AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24C94D7D2341DBDA001E23AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		107AC8E7ADFF511399ACE71A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Talk-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		16EAB6EDA0ED58B7BF1F3404 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TalkUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		888BBD94CC9A208011577B6F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TalkTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E64C277721E2218D87C80DFD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Talk/Pods-Talk-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Talk/Pods-Talk-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Talk/Pods-Talk-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		24C94D5C2341DBDA001E23AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24C94D662341DBDA001E23AB /* ViewController.swift in Sources */,
+				24C94D642341DBDA001E23AB /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24C94D702341DBDA001E23AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24C94D792341DBDA001E23AB /* TalkTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24C94D7B2341DBDA001E23AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24C94D842341DBDA001E23AB /* TalkUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		24C94D762341DBDA001E23AB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 24C94D5F2341DBDA001E23AB /* Talk */;
+			targetProxy = 24C94D752341DBDA001E23AB /* PBXContainerItemProxy */;
+		};
+		24C94D812341DBDA001E23AB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 24C94D5F2341DBDA001E23AB /* Talk */;
+			targetProxy = 24C94D802341DBDA001E23AB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		24C94D672341DBDA001E23AB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				24C94D682341DBDA001E23AB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		24C94D6C2341DBDA001E23AB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				24C94D6D2341DBDA001E23AB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		24C94D862341DBDA001E23AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		24C94D872341DBDA001E23AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		24C94D892341DBDA001E23AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 89BDF3D55AE307C7E415D796 /* Pods-Talk.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6U8M4ASV96;
+				INFOPLIST_FILE = Talk/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hyopangworld.Talk;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		24C94D8A2341DBDA001E23AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 27090828F5EC7301BB555769 /* Pods-Talk.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6U8M4ASV96;
+				INFOPLIST_FILE = Talk/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hyopangworld.Talk;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		24C94D8C2341DBDA001E23AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 67236F8E4D44FBC0B412A16E /* Pods-TalkTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6U8M4ASV96;
+				INFOPLIST_FILE = TalkTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hyopangworld.TalkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Talk.app/Talk";
+			};
+			name = Debug;
+		};
+		24C94D8D2341DBDA001E23AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B8B9769B3771B76C5EA63701 /* Pods-TalkTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6U8M4ASV96;
+				INFOPLIST_FILE = TalkTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hyopangworld.TalkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Talk.app/Talk";
+			};
+			name = Release;
+		};
+		24C94D8F2341DBDA001E23AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EEF7F43483D46F1CF6EC26E5 /* Pods-TalkUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6U8M4ASV96;
+				INFOPLIST_FILE = TalkUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hyopangworld.TalkUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Talk;
+			};
+			name = Debug;
+		};
+		24C94D902341DBDA001E23AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 893D1FD480157F9EE3D0104D /* Pods-TalkUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6U8M4ASV96;
+				INFOPLIST_FILE = TalkUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hyopangworld.TalkUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Talk;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		24C94D5B2341DBDA001E23AB /* Build configuration list for PBXProject "Talk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24C94D862341DBDA001E23AB /* Debug */,
+				24C94D872341DBDA001E23AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		24C94D882341DBDA001E23AB /* Build configuration list for PBXNativeTarget "Talk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24C94D892341DBDA001E23AB /* Debug */,
+				24C94D8A2341DBDA001E23AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		24C94D8B2341DBDA001E23AB /* Build configuration list for PBXNativeTarget "TalkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24C94D8C2341DBDA001E23AB /* Debug */,
+				24C94D8D2341DBDA001E23AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		24C94D8E2341DBDA001E23AB /* Build configuration list for PBXNativeTarget "TalkUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24C94D8F2341DBDA001E23AB /* Debug */,
+				24C94D902341DBDA001E23AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 24C94D582341DBDA001E23AB /* Project object */;
+}
