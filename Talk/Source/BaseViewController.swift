@@ -19,4 +19,12 @@ class BaseViewController: UIViewController {
         // Initalize setting etc.
     }
     
+    func showAlert(title: String, message: String, action: UIAlertAction? ){
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        if action != nil {
+            alert.addAction(action!)
+        }
+        
+        self.present(alert, animated: true, completion: nil)
+    }
 }

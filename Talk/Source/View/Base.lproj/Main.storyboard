@@ -131,13 +131,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="GHX-6x-dgQ">
-                                <rect key="frame" x="87" y="184" width="240" height="122"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="upload" translatesAutoresizingMaskIntoConstraints="NO" id="GHX-6x-dgQ">
+                                <rect key="frame" x="117" y="184" width="180" height="180"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="180" id="rjP-yJ-ece"/>
+                                    <constraint firstAttribute="width" constant="180" id="xVO-kA-gb8"/>
+                                </constraints>
                             </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sfr-es-f9a" customClass="HoshiTextField" customModule="TextFieldEffects">
-                                <rect key="frame" x="25" y="386" width="364" height="50"/>
+                                <rect key="frame" x="25" y="474" width="364" height="50"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="xzM-hz-nrz"/>
+                                    <constraint firstAttribute="height" constant="50" id="nIh-aK-weo"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" textContentType="username"/>
@@ -151,9 +155,9 @@
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="UserName" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bSp-iY-9O5" customClass="HoshiTextField" customModule="TextFieldEffects">
-                                <rect key="frame" x="25" y="456" width="364" height="50"/>
+                                <rect key="frame" x="25" y="560" width="364" height="50"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="dq9-ES-ivy"/>
+                                    <constraint firstAttribute="height" constant="50" id="VZP-cG-j0c"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" textContentType="password"/>
@@ -167,9 +171,9 @@
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mTi-a4-syL" customClass="HoshiTextField" customModule="TextFieldEffects">
-                                <rect key="frame" x="25" y="526" width="364" height="50"/>
+                                <rect key="frame" x="25" y="630" width="364" height="50"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="4qL-li-LAD"/>
+                                    <constraint firstAttribute="height" constant="50" id="EGz-sr-Xgo"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" textContentType="password"/>
@@ -183,20 +187,20 @@
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zGA-hk-tVe">
-                                <rect key="frame" x="25" y="606" width="364" height="50"/>
+                                <rect key="frame" x="25" y="710" width="364" height="50"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="xuF-g5-6e0"/>
+                                    <constraint firstAttribute="height" constant="50" id="E71-Xw-qBl"/>
                                 </constraints>
                                 <state key="normal" title="Sign Up">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h6a-LY-3tk">
-                                <rect key="frame" x="25" y="677" width="364" height="50"/>
+                                <rect key="frame" x="25" y="781" width="364" height="50"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="p8U-00-PmJ"/>
+                                    <constraint firstAttribute="height" constant="50" id="wna-p6-8Wm"/>
                                 </constraints>
                                 <state key="normal" title="Cancle">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -205,31 +209,34 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="GHX-6x-dgQ" firstAttribute="top" secondItem="gpk-X7-Xow" secondAttribute="top" constant="140" id="1E7-Z3-5eA"/>
-                            <constraint firstItem="gpk-X7-Xow" firstAttribute="trailing" secondItem="mTi-a4-syL" secondAttribute="trailing" constant="25" id="1TG-CH-ahO"/>
-                            <constraint firstItem="h6a-LY-3tk" firstAttribute="leading" secondItem="mTi-a4-syL" secondAttribute="leading" id="1uD-CF-pYp"/>
-                            <constraint firstItem="gpk-X7-Xow" firstAttribute="trailing" secondItem="bSp-iY-9O5" secondAttribute="trailing" constant="25" id="2k0-wE-Pln"/>
-                            <constraint firstItem="GHX-6x-dgQ" firstAttribute="centerX" secondItem="UTP-JK-SdJ" secondAttribute="centerX" id="4f2-WX-Ig6"/>
-                            <constraint firstItem="bSp-iY-9O5" firstAttribute="top" secondItem="sfr-es-f9a" secondAttribute="bottom" constant="20" id="61Z-k9-qYK"/>
-                            <constraint firstItem="gpk-X7-Xow" firstAttribute="trailing" secondItem="sfr-es-f9a" secondAttribute="trailing" constant="25" id="7SY-bM-Veh"/>
-                            <constraint firstItem="gpk-X7-Xow" firstAttribute="trailing" secondItem="GHX-6x-dgQ" secondAttribute="trailing" constant="87" id="Ar5-46-6Uf"/>
-                            <constraint firstItem="h6a-LY-3tk" firstAttribute="trailing" secondItem="mTi-a4-syL" secondAttribute="trailing" id="Cp9-7Z-h6g"/>
-                            <constraint firstItem="gpk-X7-Xow" firstAttribute="bottom" secondItem="bSp-iY-9O5" secondAttribute="bottom" constant="356" id="DI3-I1-YPC"/>
-                            <constraint firstItem="mTi-a4-syL" firstAttribute="leading" secondItem="gpk-X7-Xow" secondAttribute="leading" constant="25" id="HtN-bm-ZOK"/>
-                            <constraint firstItem="sfr-es-f9a" firstAttribute="leading" secondItem="gpk-X7-Xow" secondAttribute="leading" constant="25" id="JpM-sW-Urr"/>
-                            <constraint firstItem="h6a-LY-3tk" firstAttribute="leading" secondItem="zGA-hk-tVe" secondAttribute="leading" id="LfJ-pm-kJG"/>
-                            <constraint firstItem="GHX-6x-dgQ" firstAttribute="leading" secondItem="gpk-X7-Xow" secondAttribute="leading" constant="87" id="SqR-gB-C2T"/>
-                            <constraint firstItem="h6a-LY-3tk" firstAttribute="top" secondItem="zGA-hk-tVe" secondAttribute="bottom" constant="21" id="VHU-tb-G7r"/>
-                            <constraint firstItem="bSp-iY-9O5" firstAttribute="centerX" secondItem="UTP-JK-SdJ" secondAttribute="centerX" id="VeV-hl-DJH"/>
-                            <constraint firstItem="mTi-a4-syL" firstAttribute="top" secondItem="bSp-iY-9O5" secondAttribute="bottom" constant="20" id="WLN-PJ-RhK"/>
-                            <constraint firstItem="sfr-es-f9a" firstAttribute="top" secondItem="GHX-6x-dgQ" secondAttribute="bottom" constant="80" id="WxT-db-zoy"/>
-                            <constraint firstItem="sfr-es-f9a" firstAttribute="centerX" secondItem="UTP-JK-SdJ" secondAttribute="centerX" id="lrE-62-qLI"/>
-                            <constraint firstItem="bSp-iY-9O5" firstAttribute="leading" secondItem="gpk-X7-Xow" secondAttribute="leading" constant="25" id="mBy-uh-Nr7"/>
-                            <constraint firstItem="zGA-hk-tVe" firstAttribute="top" secondItem="mTi-a4-syL" secondAttribute="bottom" constant="30" id="oZe-M8-QWQ"/>
-                            <constraint firstItem="h6a-LY-3tk" firstAttribute="trailing" secondItem="zGA-hk-tVe" secondAttribute="trailing" id="yVx-c0-ajn"/>
+                            <constraint firstItem="gpk-X7-Xow" firstAttribute="trailing" secondItem="mTi-a4-syL" secondAttribute="trailing" constant="25" id="04w-xS-k41"/>
+                            <constraint firstItem="mTi-a4-syL" firstAttribute="top" secondItem="bSp-iY-9O5" secondAttribute="bottom" constant="20" id="6B2-gL-moe"/>
+                            <constraint firstItem="gpk-X7-Xow" firstAttribute="trailing" secondItem="h6a-LY-3tk" secondAttribute="trailing" constant="25" id="7Eq-5J-KPD"/>
+                            <constraint firstItem="gpk-X7-Xow" firstAttribute="trailing" secondItem="sfr-es-f9a" secondAttribute="trailing" constant="25" id="MSl-OG-JXx"/>
+                            <constraint firstItem="h6a-LY-3tk" firstAttribute="leading" secondItem="gpk-X7-Xow" secondAttribute="leading" constant="25" id="NBk-Yr-XEg"/>
+                            <constraint firstItem="GHX-6x-dgQ" firstAttribute="centerX" secondItem="UTP-JK-SdJ" secondAttribute="centerX" id="Scr-De-GoC"/>
+                            <constraint firstItem="zGA-hk-tVe" firstAttribute="leading" secondItem="gpk-X7-Xow" secondAttribute="leading" constant="25" id="Tud-fw-D0f"/>
+                            <constraint firstItem="gpk-X7-Xow" firstAttribute="trailing" secondItem="bSp-iY-9O5" secondAttribute="trailing" constant="25" id="Xs2-tk-c80"/>
+                            <constraint firstItem="bSp-iY-9O5" firstAttribute="top" secondItem="sfr-es-f9a" secondAttribute="bottom" constant="36" id="YBl-Eu-7tw"/>
+                            <constraint firstItem="bSp-iY-9O5" firstAttribute="leading" secondItem="gpk-X7-Xow" secondAttribute="leading" constant="25" id="aNf-cV-eLg"/>
+                            <constraint firstItem="sfr-es-f9a" firstAttribute="top" secondItem="GHX-6x-dgQ" secondAttribute="bottom" constant="110" id="czX-Ea-s6K"/>
+                            <constraint firstItem="gpk-X7-Xow" firstAttribute="trailing" secondItem="zGA-hk-tVe" secondAttribute="trailing" constant="25" id="ff3-Eh-vRD"/>
+                            <constraint firstItem="sfr-es-f9a" firstAttribute="leading" secondItem="gpk-X7-Xow" secondAttribute="leading" constant="25" id="jjo-XN-suq"/>
+                            <constraint firstItem="mTi-a4-syL" firstAttribute="leading" secondItem="gpk-X7-Xow" secondAttribute="leading" constant="25" id="nwy-Or-V8o"/>
+                            <constraint firstItem="GHX-6x-dgQ" firstAttribute="top" secondItem="gpk-X7-Xow" secondAttribute="top" constant="140" id="pFD-TC-nLX"/>
+                            <constraint firstItem="h6a-LY-3tk" firstAttribute="top" secondItem="zGA-hk-tVe" secondAttribute="bottom" constant="21" id="qSf-7c-Yi9"/>
+                            <constraint firstItem="zGA-hk-tVe" firstAttribute="top" secondItem="mTi-a4-syL" secondAttribute="bottom" constant="30" id="wlo-Tv-KKn"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="gpk-X7-Xow"/>
                     </view>
+                    <connections>
+                        <outlet property="cancleButton" destination="h6a-LY-3tk" id="DPg-nd-YIY"/>
+                        <outlet property="email" destination="sfr-es-f9a" id="OYs-J3-VmZ"/>
+                        <outlet property="password" destination="mTi-a4-syL" id="CYR-Je-Olc"/>
+                        <outlet property="photoView" destination="GHX-6x-dgQ" id="HJE-ee-DzT"/>
+                        <outlet property="signupbutton" destination="zGA-hk-tVe" id="mNT-Kt-TJz"/>
+                        <outlet property="userName" destination="bSp-iY-9O5" id="O3I-DG-jUU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VJv-h3-Hvi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -238,5 +245,6 @@
     </scenes>
     <resources>
         <image name="icon" width="128" height="128"/>
+        <image name="upload" width="512" height="512"/>
     </resources>
 </document>

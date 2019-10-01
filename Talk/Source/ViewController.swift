@@ -10,7 +10,7 @@ import UIKit
 import SnapKit
 import Firebase
 
-class ViewController: UIViewController {
+class ViewController: BaseViewController {
     
     var box = UIImageView()
     var remoteConfig: RemoteConfig!
@@ -22,11 +22,11 @@ class ViewController: UIViewController {
         initSet()
     }
     
-    func initUI(){
+    override func initUI(){
         box.image = #imageLiteral(resourceName: "icon")
     }
     
-    func initSet(){
+    override func initSet(){
         remoteConfig = RemoteConfig.remoteConfig()
         let settings = RemoteConfigSettings()
         settings.minimumFetchInterval = 0
@@ -58,14 +58,9 @@ class ViewController: UIViewController {
         let message = remoteConfig["splash_message"].stringValue
         
         if caps {
-            
-            let alert = UIAlertController(title: "공지사항", message: message, preferredStyle: .alert)
-            alert.addAction(UIAlertAction(title: "확인", style: .default, handler: { action in
+            self.showAlert(title: "공지사항", message: message!, action: UIAlertAction(title: "확인", style: .default, handler: { action in
                 exit(0)
             }))
-            
-            self.present(alert, animated: true, completion: nil)
-            
         } else {
     
             changeRootViewLoginViewController()
