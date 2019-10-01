@@ -58,25 +58,14 @@ class ViewController: BaseViewController {
         let message = remoteConfig["splash_message"].stringValue
         
         if caps {
-            self.showAlert(title: "공지사항", message: message!, action: UIAlertAction(title: "확인", style: .default, handler: { action in
+            showAlert(title: "공지사항", message: message!, action: UIAlertAction(title: "확인", style: .default, handler: { action in
                 exit(0)
             }))
         } else {
-    
             changeRootViewLoginViewController()
         }
         
         self.view.backgroundColor = UIColor(hex: color!)
-    }
-    
-    func changeRootViewLoginViewController() {
-        let setMainRoot = UIApplication.shared.delegate as! AppDelegate
-        let window = setMainRoot.window
-
-        let loginNavigationVC = self.storyboard?.instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
-        
-        window?.rootViewController = loginNavigationVC
-        window?.makeKeyAndVisible()
     }
 }
 

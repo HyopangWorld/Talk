@@ -10,6 +10,8 @@ import UIKit
 import Firebase
 
 class LoginViewController: BaseViewController {
+    @IBOutlet weak var email: UITextField!
+    @IBOutlet weak var password: UITextField!
     @IBOutlet weak var loginButton: UIButton!
     @IBOutlet weak var signupButton: UIButton!
     
@@ -20,6 +22,7 @@ class LoginViewController: BaseViewController {
         super.viewDidLoad()
         
         initUI()
+        initSet()
     }
 
     override func initUI() {
@@ -34,13 +37,41 @@ class LoginViewController: BaseViewController {
         statusBar.backgroundColor = UIColor(hex: color!)
         loginButton.backgroundColor = UIColor(hex: color!)
         signupButton.backgroundColor = UIColor(hex: color!)
-        
-        signupButton.addTarget(self, action: #selector(presentSignup), for: .touchUpInside)
     }
     
+    override func initSet() {
+        loginButton.addTarget(self, action: #selector(doLogin), for: .touchUpInside)
+        signupButton.addTarget(self, action: #selector(presentSignup), for: .touchUpInside)
+        
+        Auth.auth().addStateDidChangeListener { (auth, user) in
+            if user != nil {
+                self.changeRootViewMainViewController()
+            }
+        }
+    }
+    
+    
+    // MARK: - 로그인
+    @objc func doLogin(){
+        guard let email = email.text, let password = password.text else {
+            self.showAlert(title: "정보 입력", message: "정보를 입력하세요.",
+                           action: UIAlertAction(title: "확인", style: .default, handler: nil))
+            return
+        }
+        
+        Auth.auth().signIn(withEmail: email, password: password, completion: { (user, err) in
+            if err != nil{
+                self.showAlert(title: "로그인 실패", message: err.debugDescription,
+                          action: UIAlertAction(title: "확인", style: .default, handler: nil))
+                return
+            }
+        })
+    }
+    
+    
+    // MARK: - 회원가입
     @objc func presentSignup(){
         let signupVC = storyboard?.instantiateViewController(withIdentifier: "SignupViewController") as! SignupViewController
         self.present(signupVC, animated: true, completion: nil)
     }
-
 }

@@ -38,13 +38,13 @@
                                     <constraint firstAttribute="width" constant="100" id="iWt-dp-aZd"/>
                                 </constraints>
                             </imageView>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Zg7-jc-Frp" customClass="HoshiTextField" customModule="TextFieldEffects">
-                                <rect key="frame" x="25" y="434" width="364" height="50"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uY8-vh-o9s" customClass="HoshiTextField" customModule="TextFieldEffects">
+                                <rect key="frame" x="25" y="354" width="364" height="50"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="t68-4C-A8o"/>
+                                    <constraint firstAttribute="height" constant="50" id="sbE-4t-6PI"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <textInputTraits key="textInputTraits" textContentType="password"/>
+                                <textInputTraits key="textInputTraits" textContentType="username"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="borderInactiveColor">
                                         <color key="value" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -54,13 +54,13 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uY8-vh-o9s" customClass="HoshiTextField" customModule="TextFieldEffects">
-                                <rect key="frame" x="25" y="354" width="364" height="50"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Zg7-jc-Frp" customClass="HoshiTextField" customModule="TextFieldEffects">
+                                <rect key="frame" x="25" y="434" width="364" height="50"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="sbE-4t-6PI"/>
+                                    <constraint firstAttribute="height" constant="50" id="t68-4C-A8o"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <textInputTraits key="textInputTraits" textContentType="username"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="borderInactiveColor">
                                         <color key="value" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -115,13 +115,30 @@
                         <viewLayoutGuide key="safeArea" id="5at-Bv-QPn"/>
                     </view>
                     <connections>
+                        <outlet property="email" destination="uY8-vh-o9s" id="NLf-6P-bGZ"/>
                         <outlet property="loginButton" destination="brf-da-0RK" id="npV-e4-MxS"/>
+                        <outlet property="password" destination="Zg7-jc-Frp" id="Agx-No-GKt"/>
                         <outlet property="signupButton" destination="yHr-n6-WI9" id="LZE-By-QAF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EIl-C2-XWc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="914" y="135"/>
+            <point key="canvasLocation" x="1035" y="135"/>
+        </scene>
+        <!--Main View Controller-->
+        <scene sceneID="hbi-Hb-nvx">
+            <objects>
+                <viewController storyboardIdentifier="MainViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ACU-Un-o21" customClass="MainViewController" customModule="Talk" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="F2U-g4-w4b">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBrownColor" red="0.63529411759999999" green="0.51764705879999995" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="szN-ng-Pg4"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tiF-MB-cgm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1861" y="135"/>
         </scene>
         <!--Signup View Controller-->
         <scene sceneID="B0v-GT-ApQ">
@@ -176,7 +193,7 @@
                                     <constraint firstAttribute="height" constant="50" id="EGz-sr-Xgo"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <textInputTraits key="textInputTraits" textContentType="password"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="borderInactiveColor">
                                         <color key="value" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -240,7 +257,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VJv-h3-Hvi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1697" y="134"/>
+            <point key="canvasLocation" x="1035" y="818"/>
         </scene>
     </scenes>
     <resources>

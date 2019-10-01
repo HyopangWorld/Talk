@@ -69,16 +69,11 @@ class SignupViewController: BaseViewController {
     
     // MARK: - 회원 가입
     @objc func signupEvent(){
-        guard let userName = userName.text else {
+        guard let userName = userName.text, let email = email.text, let password = password.text else {
+            self.showAlert(title: "정보 입력", message: "정보를 입력하세요.",
+                           action: UIAlertAction(title: "확인", style: .default, handler: nil))
             return
         }
-        guard let email = email.text else {
-            return
-        }
-        guard let password = password.text else {
-            return
-        }
-        
         
         Auth.auth().createUser(withEmail: email, password: password) { (user, err) in
             guard let uid = user?.user.uid else {
