@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		14942094D409994F1065506F /* Pods_Talk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14E0F05863EDE4CCFA0C3442 /* Pods_Talk.framework */; };
 		23A35EDC4A90F221CE58BCE1 /* Pods_TalkUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E78238A9E7FDB83BF29D0871 /* Pods_TalkUITests.framework */; };
+		2416801D2342F3E200F5D3AA /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2416801C2342F3E200F5D3AA /* SignupViewController.swift */; };
 		24C94D642341DBDA001E23AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C94D632341DBDA001E23AB /* AppDelegate.swift */; };
 		24C94D662341DBDA001E23AB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C94D652341DBDA001E23AB /* ViewController.swift */; };
 		24C94D692341DBDA001E23AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24C94D672341DBDA001E23AB /* Main.storyboard */; };
@@ -43,6 +44,7 @@
 
 /* Begin PBXFileReference section */
 		14E0F05863EDE4CCFA0C3442 /* Pods_Talk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Talk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2416801C2342F3E200F5D3AA /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		24C94D602341DBDA001E23AB /* Talk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Talk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		24C94D632341DBDA001E23AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		24C94D652341DBDA001E23AB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -99,6 +101,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2416801B2342F34800F5D3AA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		24C94D572341DBDA001E23AB = {
 			isa = PBXGroup;
 			children = (
@@ -155,10 +164,11 @@
 		24C94D952341E7F8001E23AB /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				2416801B2342F34800F5D3AA /* Model */,
 				24C94D9E2341E9E2001E23AB /* View */,
+				24C94D972341E830001E23AB /* Utils */,
 				24C94D652341DBDA001E23AB /* ViewController.swift */,
 				24C94D632341DBDA001E23AB /* AppDelegate.swift */,
-				24C94D972341E830001E23AB /* Utils */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -176,6 +186,7 @@
 			children = (
 				24C94D9F2341F0ED001E23AB /* BaseViewController.swift */,
 				24C94D9A2341E9DD001E23AB /* LoginViewController.swift */,
+				2416801C2342F3E200F5D3AA /* SignupViewController.swift */,
 				24C94D672341DBDA001E23AB /* Main.storyboard */,
 			);
 			path = View;
@@ -427,6 +438,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2416801D2342F3E200F5D3AA /* SignupViewController.swift in Sources */,
 				24C94DA02341F0ED001E23AB /* BaseViewController.swift in Sources */,
 				24C94D9C2341E9DD001E23AB /* LoginViewController.swift in Sources */,
 				24C94D992341E84E001E23AB /* UIColor+Utils.swift in Sources */,

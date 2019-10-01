@@ -11,7 +11,7 @@ import Firebase
 
 class LoginViewController: BaseViewController {
     @IBOutlet weak var loginButton: UIButton!
-    @IBOutlet weak var signInButton: UIButton!
+    @IBOutlet weak var signupButton: UIButton!
     
     let remoteConfig = RemoteConfig.remoteConfig()
     var color: String?
@@ -33,7 +33,14 @@ class LoginViewController: BaseViewController {
         color = remoteConfig["splash_background"].stringValue
         statusBar.backgroundColor = UIColor(hex: color!)
         loginButton.backgroundColor = UIColor(hex: color!)
-        signInButton.backgroundColor = UIColor(hex: color!)
+        signupButton.backgroundColor = UIColor(hex: color!)
+        
+        signupButton.addTarget(self, action: #selector(presentSignup), for: .touchUpInside)
+    }
+    
+    @objc func presentSignup(){
+        let signupVC = storyboard?.instantiateViewController(withIdentifier: "SignupViewController") as! SignupViewController
+        self.present(signupVC, animated: true, completion: nil)
     }
 
 }
