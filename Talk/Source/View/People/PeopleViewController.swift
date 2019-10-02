@@ -44,11 +44,18 @@ class PeopleViewController: BaseViewController {
         Database.database().reference().child("users").observe(DataEventType.value, with:{ (snapshot) in
             self.array.removeAll()
             
+            let myUid = Auth.auth().currentUser?.uid
+            
             for child in snapshot.children {
                 let fchild = child as! DataSnapshot
                 let user = User()
                 
                 user.setValuesForKeys(fchild.value as! [String : Any])
+                
+                if user.uid == myUid {
+                    continue
+                }
+                
                 self.array.append(user)
             }
             
@@ -101,13 +108,10 @@ extension PeopleViewController: UITableViewDelegate, UITableViewDataSource {
         return 70
     }
     
-    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        guard let view = self.storyboard?.instantiateViewController(withIdentifier: "ChatViewController") else {
-            return
-        }
+        let chatVC = self.storyboard?.instantiateViewController(withIdentifier: "ChatViewController") as! ChatViewController
+        chatVC.destinationUid = array[indexPath.row].uid
         
-        self.navigationController?.pushViewController(view, animated: true)
-        
+        self.navigationController?.pushViewController(chatVC, animated: true)
     }
 }

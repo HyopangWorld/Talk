@@ -102,7 +102,7 @@ class SignupViewController: BaseViewController {
                          return
                      }
                                                                           
-                    let value = ["userName": userName, "profileImageUrl": imageURL]
+                    let value = ["uid": Auth.auth().currentUser?.uid, "userName": userName, "profileImageUrl": imageURL]
                      Database.database().reference().child("users").child(uid).setValue(value, withCompletionBlock: { (err, ref) in
                             self.hideIndicator()
                             self.showAlert(title: "", message: "회원가입이 완료되었습니다.",

@@ -25,5 +25,6 @@ pod 'Firebase/Analytics'
 pod 'Firebase/Database'
 pod 'Firebase/Auth'
 pod 'Firebase/Storage'
+pod 'ObjectMapper', '~> 3.1'
 
 end
