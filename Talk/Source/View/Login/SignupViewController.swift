@@ -75,6 +75,7 @@ class SignupViewController: BaseViewController {
             return
         }
         
+        showIndicator()
         Auth.auth().createUser(withEmail: email, password: password) { (user, err) in
             guard let uid = user?.user.uid else {
                 self.showAlert(title: "데이터 오류", message: "회원정보를 확인하세요.",
@@ -83,24 +84,36 @@ class SignupViewController: BaseViewController {
             }
             
             let image = self.photoView.image?.jpegData(compressionQuality: CGFloat(0.1))
-            Storage.storage().reference().child("userImages").child(uid).putData(image!, metadata: nil,
-                                                                                 completion: { (data, err) in
-                guard let imageURL = data?.path else {
-                    self.showAlert(title: "데이터 오류", message: "프로필 사진을 확인하세요.",
-                                   action: UIAlertAction(title: "확인", style: .default, handler: nil))
+            let starsRef = Storage.storage().reference().child("userImages").child(uid)
+            
+            starsRef.putData(image!, metadata: nil, completion: { (data, err) in
+                if err != nil {
                     return
                 }
-                                                                                    
-                Database.database().reference().child("users").child(uid)
-                    .setValue(["userName": userName, "profileImageUrl": imageURL], withCompletionBlock: { (err, ref) in
-                                
+                
+                starsRef.downloadURL { (url, err) in
+                    if err != nil {
+                        return
+                    }
+                    
+                    guard let imageURL = url?.absoluteString else {
+                         self.showAlert(title: "데이터 오류", message: "프로필 사진을 확인하세요.",
+                                        action: UIAlertAction(title: "확인", style: .default, handler: nil))
+                         return
+                     }
+                                                                          
+                    let value = ["userName": userName, "profileImageUrl": imageURL]
+                     Database.database().reference().child("users").child(uid).setValue(value, withCompletionBlock: { (err, ref) in
+                            self.hideIndicator()
                             self.showAlert(title: "", message: "회원가입이 완료되었습니다.",
                                            action: UIAlertAction(title: "확인", style: .default, handler: { _ in
-                                            self.dismiss(animated: true, completion: nil)
-                                           }))
-                })
+                                                self.cancleEvent()
+                                            }))
+                     })
+                }
             })
         }
+        
     }
     
 }

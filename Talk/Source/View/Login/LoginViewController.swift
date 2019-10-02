@@ -20,6 +20,10 @@ class LoginViewController: BaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        if Auth.auth().currentUser != nil {
+            self.changeRootViewMainViewController()
+        }
         
         initUI()
         initSet()
@@ -42,12 +46,6 @@ class LoginViewController: BaseViewController {
     override func initSet() {
         loginButton.addTarget(self, action: #selector(doLogin), for: .touchUpInside)
         signupButton.addTarget(self, action: #selector(presentSignup), for: .touchUpInside)
-        
-        Auth.auth().addStateDidChangeListener { (auth, user) in
-            if user != nil {
-                self.changeRootViewMainViewController()
-            }
-        }
     }
     
     
@@ -59,11 +57,18 @@ class LoginViewController: BaseViewController {
             return
         }
         
+        showIndicator()
         Auth.auth().signIn(withEmail: email, password: password, completion: { (user, err) in
+            self.hideIndicator()
+            
             if err != nil{
                 self.showAlert(title: "로그인 실패", message: err.debugDescription,
                           action: UIAlertAction(title: "확인", style: .default, handler: nil))
                 return
+            } else {
+                if Auth.auth().currentUser != nil {
+                    self.changeRootViewMainViewController()
+                }
             }
         })
     }

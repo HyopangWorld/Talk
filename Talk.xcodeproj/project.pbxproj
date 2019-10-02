@@ -10,6 +10,7 @@
 		14942094D409994F1065506F /* Pods_Talk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14E0F05863EDE4CCFA0C3442 /* Pods_Talk.framework */; };
 		23A35EDC4A90F221CE58BCE1 /* Pods_TalkUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E78238A9E7FDB83BF29D0871 /* Pods_TalkUITests.framework */; };
 		2416801D2342F3E200F5D3AA /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2416801C2342F3E200F5D3AA /* SignupViewController.swift */; };
+		24C1BE26234431BE006498A3 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C1BE25234431BE006498A3 /* User.swift */; };
 		24C94D642341DBDA001E23AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C94D632341DBDA001E23AB /* AppDelegate.swift */; };
 		24C94D662341DBDA001E23AB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C94D652341DBDA001E23AB /* ViewController.swift */; };
 		24C94D692341DBDA001E23AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24C94D672341DBDA001E23AB /* Main.storyboard */; };
@@ -23,7 +24,7 @@
 		24C94D9C2341E9DD001E23AB /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C94D9A2341E9DD001E23AB /* LoginViewController.swift */; };
 		24C94DA02341F0ED001E23AB /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C94D9F2341F0ED001E23AB /* BaseViewController.swift */; };
 		24CED331234312A000ABEC75 /* String+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24CED330234312A000ABEC75 /* String+Utils.swift */; };
-		24FED11123433A18008159FE /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FED10F23433A18008159FE /* MainViewController.swift */; };
+		24FED11123433A18008159FE /* PeopleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FED10F23433A18008159FE /* PeopleViewController.swift */; };
 		AAFD0BC0749540B7A1614C0A /* Pods_TalkTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF0C6315632661F27E8796AD /* Pods_TalkTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -47,6 +48,7 @@
 /* Begin PBXFileReference section */
 		14E0F05863EDE4CCFA0C3442 /* Pods_Talk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Talk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2416801C2342F3E200F5D3AA /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
+		24C1BE25234431BE006498A3 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		24C94D602341DBDA001E23AB /* Talk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Talk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		24C94D632341DBDA001E23AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		24C94D652341DBDA001E23AB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -66,7 +68,7 @@
 		24C94D9A2341E9DD001E23AB /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		24C94D9F2341F0ED001E23AB /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		24CED330234312A000ABEC75 /* String+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Utils.swift"; sourceTree = "<group>"; };
-		24FED10F23433A18008159FE /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		24FED10F23433A18008159FE /* PeopleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleViewController.swift; sourceTree = "<group>"; };
 		27090828F5EC7301BB555769 /* Pods-Talk.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Talk.release.xcconfig"; path = "Target Support Files/Pods-Talk/Pods-Talk.release.xcconfig"; sourceTree = "<group>"; };
 		67236F8E4D44FBC0B412A16E /* Pods-TalkTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TalkTests.debug.xcconfig"; path = "Target Support Files/Pods-TalkTests/Pods-TalkTests.debug.xcconfig"; sourceTree = "<group>"; };
 		893D1FD480157F9EE3D0104D /* Pods-TalkUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TalkUITests.release.xcconfig"; path = "Target Support Files/Pods-TalkUITests/Pods-TalkUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -108,8 +110,40 @@
 		2416801B2342F34800F5D3AA /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				24C1BE25234431BE006498A3 /* User.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		24C1BE2723443251006498A3 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				24C94D9A2341E9DD001E23AB /* LoginViewController.swift */,
+				2416801C2342F3E200F5D3AA /* SignupViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		24C1BE2823443259006498A3 /* People */ = {
+			isa = PBXGroup;
+			children = (
+				24FED10F23433A18008159FE /* PeopleViewController.swift */,
+			);
+			path = People;
+			sourceTree = "<group>";
+		};
+		24C1BE2923443266006498A3 /* Account */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Account;
+			sourceTree = "<group>";
+		};
+		24C1BE2A23443272006498A3 /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Chat;
 			sourceTree = "<group>";
 		};
 		24C94D572341DBDA001E23AB = {
@@ -190,9 +224,10 @@
 		24C94D9E2341E9E2001E23AB /* View */ = {
 			isa = PBXGroup;
 			children = (
-				24C94D9A2341E9DD001E23AB /* LoginViewController.swift */,
-				2416801C2342F3E200F5D3AA /* SignupViewController.swift */,
-				24FED10F23433A18008159FE /* MainViewController.swift */,
+				24C1BE2A23443272006498A3 /* Chat */,
+				24C1BE2923443266006498A3 /* Account */,
+				24C1BE2823443259006498A3 /* People */,
+				24C1BE2723443251006498A3 /* Login */,
 				24C94D672341DBDA001E23AB /* Main.storyboard */,
 			);
 			path = View;
@@ -449,9 +484,10 @@
 				24C94D9C2341E9DD001E23AB /* LoginViewController.swift in Sources */,
 				24C94D992341E84E001E23AB /* UIColor+Utils.swift in Sources */,
 				24C94D662341DBDA001E23AB /* ViewController.swift in Sources */,
+				24C1BE26234431BE006498A3 /* User.swift in Sources */,
 				24CED331234312A000ABEC75 /* String+Utils.swift in Sources */,
 				24C94D642341DBDA001E23AB /* AppDelegate.swift in Sources */,
-				24FED11123433A18008159FE /* MainViewController.swift in Sources */,
+				24FED11123433A18008159FE /* PeopleViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
