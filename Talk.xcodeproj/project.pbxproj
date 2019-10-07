@@ -10,6 +10,7 @@
 		14942094D409994F1065506F /* Pods_Talk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14E0F05863EDE4CCFA0C3442 /* Pods_Talk.framework */; };
 		23A35EDC4A90F221CE58BCE1 /* Pods_TalkUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E78238A9E7FDB83BF29D0871 /* Pods_TalkUITests.framework */; };
 		2416801D2342F3E200F5D3AA /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2416801C2342F3E200F5D3AA /* SignupViewController.swift */; };
+		242B03F5234B2CAD00A0A1A0 /* ChatTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 242B03F4234B2CAD00A0A1A0 /* ChatTableViewCell.swift */; };
 		242C70D823448CBF000F4D5D /* ChatViewController+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 242C70D723448CBF000F4D5D /* ChatViewController+TableView.swift */; };
 		2449FE122344766B00A2B94A /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2449FE112344766B00A2B94A /* ChatViewController.swift */; };
 		2449FE142344771500A2B94A /* Chat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2449FE132344771500A2B94A /* Chat.swift */; };
@@ -51,6 +52,7 @@
 /* Begin PBXFileReference section */
 		14E0F05863EDE4CCFA0C3442 /* Pods_Talk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Talk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2416801C2342F3E200F5D3AA /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
+		242B03F4234B2CAD00A0A1A0 /* ChatTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatTableViewCell.swift; sourceTree = "<group>"; };
 		242C70D723448CBF000F4D5D /* ChatViewController+TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ChatViewController+TableView.swift"; sourceTree = "<group>"; };
 		2449FE112344766B00A2B94A /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		2449FE132344771500A2B94A /* Chat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chat.swift; sourceTree = "<group>"; };
@@ -122,6 +124,14 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		242B03F3234B2C9200A0A1A0 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				242B03F4234B2CAD00A0A1A0 /* ChatTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		24C1BE2723443251006498A3 /* Login */ = {
 			isa = PBXGroup;
 			children = (
@@ -149,6 +159,7 @@
 		24C1BE2A23443272006498A3 /* Chat */ = {
 			isa = PBXGroup;
 			children = (
+				242B03F3234B2C9200A0A1A0 /* Cell */,
 				2449FE112344766B00A2B94A /* ChatViewController.swift */,
 				242C70D723448CBF000F4D5D /* ChatViewController+TableView.swift */,
 			);
@@ -499,6 +510,7 @@
 				24CED331234312A000ABEC75 /* String+Utils.swift in Sources */,
 				24C94D642341DBDA001E23AB /* AppDelegate.swift in Sources */,
 				2449FE122344766B00A2B94A /* ChatViewController.swift in Sources */,
+				242B03F5234B2CAD00A0A1A0 /* ChatTableViewCell.swift in Sources */,
 				24FED11123433A18008159FE /* PeopleViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

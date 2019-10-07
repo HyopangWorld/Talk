@@ -18,16 +18,23 @@ class ChatViewController: BaseViewController {
     var uid: String?
     var chatRoomUid: String?
     var comments: [Chat.Comment] = []
+    var destinationUser: User?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        initUI()
         initSet()
+    }
+    
+    override func initUI() {
+        tableView.separatorStyle = .none
     }
     
     override func initSet() {
         uid = Auth.auth().currentUser?.uid
         
+        checkChatRoom()
         sendButton.addTarget(self, action: #selector(createRoom), for: .touchUpInside)
     }
     
@@ -63,6 +70,7 @@ class ChatViewController: BaseViewController {
         ]
         
         Database.database().reference().child("chatrooms").child(chatRoomUid).child("comments").childByAutoId().setValue(value)
+        messageTextField.text = ""
     }
     
     
@@ -81,10 +89,26 @@ class ChatViewController: BaseViewController {
                     if (chat?.users[self.destinationUid!]) != nil {
                         self.chatRoomUid = item.key
                         self.sendButton.isEnabled = true
-                        self.getMessageList()
+                        self.getDestinationInfo()
                     }
                 }
         }
+    }
+    
+    
+    // MARK: - 상대방 정보 가져오기
+    func getDestinationInfo(){
+        guard let destinationUid = destinationUid else {
+            return
+        }
+        
+        Database.database().reference().child("users").child(destinationUid)
+            .observe(DataEventType.value, with:{ (snapshot) in
+                self.destinationUser = User()
+                self.destinationUser?.setValuesForKeys(snapshot.value as! [String:Any])
+            
+                self.getMessageList()
+        })
     }
     
     
