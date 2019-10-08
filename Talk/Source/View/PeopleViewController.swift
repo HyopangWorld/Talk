@@ -22,7 +22,6 @@ class PeopleViewController: BaseViewController {
         initSet()
     }
 
-
     override func initUI(){
         tableView = UITableView()
         tableView.delegate = self

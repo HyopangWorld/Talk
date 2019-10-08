@@ -14,6 +14,7 @@
 		242C70D823448CBF000F4D5D /* ChatViewController+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 242C70D723448CBF000F4D5D /* ChatViewController+TableView.swift */; };
 		2449FE122344766B00A2B94A /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2449FE112344766B00A2B94A /* ChatViewController.swift */; };
 		2449FE142344771500A2B94A /* Chat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2449FE132344771500A2B94A /* Chat.swift */; };
+		246E75C6234C51AE00E31DB7 /* SharedData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246E75C5234C51AE00E31DB7 /* SharedData.swift */; };
 		24C1BE26234431BE006498A3 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C1BE25234431BE006498A3 /* User.swift */; };
 		24C94D642341DBDA001E23AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C94D632341DBDA001E23AB /* AppDelegate.swift */; };
 		24C94D662341DBDA001E23AB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C94D652341DBDA001E23AB /* ViewController.swift */; };
@@ -56,6 +57,7 @@
 		242C70D723448CBF000F4D5D /* ChatViewController+TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ChatViewController+TableView.swift"; sourceTree = "<group>"; };
 		2449FE112344766B00A2B94A /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		2449FE132344771500A2B94A /* Chat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chat.swift; sourceTree = "<group>"; };
+		246E75C5234C51AE00E31DB7 /* SharedData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedData.swift; sourceTree = "<group>"; };
 		24C1BE25234431BE006498A3 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		24C94D602341DBDA001E23AB /* Talk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Talk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		24C94D632341DBDA001E23AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -132,38 +134,23 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
-		24C1BE2723443251006498A3 /* Login */ = {
+		246E75C9234C56B500E31DB7 /* Delegate */ = {
 			isa = PBXGroup;
 			children = (
-				24C94D9A2341E9DD001E23AB /* LoginViewController.swift */,
-				2416801C2342F3E200F5D3AA /* SignupViewController.swift */,
+				24C94D632341DBDA001E23AB /* AppDelegate.swift */,
 			);
-			path = Login;
+			path = Delegate;
 			sourceTree = "<group>";
 		};
-		24C1BE2823443259006498A3 /* People */ = {
+		246E75CA234C56C700E31DB7 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
-				24FED10F23433A18008159FE /* PeopleViewController.swift */,
+				24C94D6A2341DBDA001E23AB /* Assets.xcassets */,
+				24C94D6F2341DBDA001E23AB /* Info.plist */,
+				24C94D912341DD3C001E23AB /* GoogleService-Info.plist */,
+				24C94D932341E576001E23AB /* RemoteConfigDefaults.plist */,
 			);
-			path = People;
-			sourceTree = "<group>";
-		};
-		24C1BE2923443266006498A3 /* Account */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Account;
-			sourceTree = "<group>";
-		};
-		24C1BE2A23443272006498A3 /* Chat */ = {
-			isa = PBXGroup;
-			children = (
-				242B03F3234B2C9200A0A1A0 /* Cell */,
-				2449FE112344766B00A2B94A /* ChatViewController.swift */,
-				242C70D723448CBF000F4D5D /* ChatViewController+TableView.swift */,
-			);
-			path = Chat;
+			path = Resource;
 			sourceTree = "<group>";
 		};
 		24C94D572341DBDA001E23AB = {
@@ -192,11 +179,6 @@
 			isa = PBXGroup;
 			children = (
 				24C94D952341E7F8001E23AB /* Source */,
-				24C94D912341DD3C001E23AB /* GoogleService-Info.plist */,
-				24C94D932341E576001E23AB /* RemoteConfigDefaults.plist */,
-				24C94D6A2341DBDA001E23AB /* Assets.xcassets */,
-				24C94D6C2341DBDA001E23AB /* LaunchScreen.storyboard */,
-				24C94D6F2341DBDA001E23AB /* Info.plist */,
 			);
 			path = Talk;
 			sourceTree = "<group>";
@@ -222,12 +204,11 @@
 		24C94D952341E7F8001E23AB /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				24C94D9F2341F0ED001E23AB /* BaseViewController.swift */,
+				246E75CA234C56C700E31DB7 /* Resource */,
+				246E75C9234C56B500E31DB7 /* Delegate */,
 				2416801B2342F34800F5D3AA /* Model */,
 				24C94D9E2341E9E2001E23AB /* View */,
 				24C94D972341E830001E23AB /* Utils */,
-				24C94D652341DBDA001E23AB /* ViewController.swift */,
-				24C94D632341DBDA001E23AB /* AppDelegate.swift */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -237,6 +218,7 @@
 			children = (
 				24C94D982341E84E001E23AB /* UIColor+Utils.swift */,
 				24CED330234312A000ABEC75 /* String+Utils.swift */,
+				246E75C5234C51AE00E31DB7 /* SharedData.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -244,11 +226,16 @@
 		24C94D9E2341E9E2001E23AB /* View */ = {
 			isa = PBXGroup;
 			children = (
-				24C1BE2A23443272006498A3 /* Chat */,
-				24C1BE2923443266006498A3 /* Account */,
-				24C1BE2823443259006498A3 /* People */,
-				24C1BE2723443251006498A3 /* Login */,
+				24C94D6C2341DBDA001E23AB /* LaunchScreen.storyboard */,
+				24C94D9F2341F0ED001E23AB /* BaseViewController.swift */,
+				24C94D652341DBDA001E23AB /* ViewController.swift */,
+				2416801C2342F3E200F5D3AA /* SignupViewController.swift */,
+				24C94D9A2341E9DD001E23AB /* LoginViewController.swift */,
+				24FED10F23433A18008159FE /* PeopleViewController.swift */,
+				2449FE112344766B00A2B94A /* ChatViewController.swift */,
+				242C70D723448CBF000F4D5D /* ChatViewController+TableView.swift */,
 				24C94D672341DBDA001E23AB /* Main.storyboard */,
+				242B03F3234B2C9200A0A1A0 /* Cell */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -502,6 +489,7 @@
 				2416801D2342F3E200F5D3AA /* SignupViewController.swift in Sources */,
 				24C94DA02341F0ED001E23AB /* BaseViewController.swift in Sources */,
 				24C94D9C2341E9DD001E23AB /* LoginViewController.swift in Sources */,
+				246E75C6234C51AE00E31DB7 /* SharedData.swift in Sources */,
 				24C94D992341E84E001E23AB /* UIColor+Utils.swift in Sources */,
 				24C94D662341DBDA001E23AB /* ViewController.swift in Sources */,
 				24C1BE26234431BE006498A3 /* User.swift in Sources */,
@@ -689,7 +677,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6U8M4ASV96;
-				INFOPLIST_FILE = Talk/Info.plist;
+				INFOPLIST_FILE = Talk/Source/Resource/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -708,7 +696,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6U8M4ASV96;
-				INFOPLIST_FILE = Talk/Info.plist;
+				INFOPLIST_FILE = Talk/Source/Resource/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
