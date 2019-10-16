@@ -30,6 +30,8 @@ class LoginViewController: BaseViewController {
     }
 
     override func initUI() {
+        super.initUI()
+        
         let statusBar = UIView()
         self.view.addSubview(statusBar)
         statusBar.snp.makeConstraints { m in
@@ -44,6 +46,8 @@ class LoginViewController: BaseViewController {
     }
     
     override func initSet() {
+        super.initSet()
+        
         loginButton.addTarget(self, action: #selector(doLogin), for: .touchUpInside)
         signupButton.addTarget(self, action: #selector(presentSignup), for: .touchUpInside)
     }

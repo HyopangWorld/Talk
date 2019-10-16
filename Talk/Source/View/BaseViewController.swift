@@ -18,6 +18,7 @@ class BaseViewController: UIViewController {
     
     func initSet(){
         // Initalize setting etc.
+        setViewOnClick()
     }
     
     
@@ -39,6 +40,18 @@ class BaseViewController: UIViewController {
     
     func hideIndicator(){
         indicator?.stopAnimating()
+    }
+    
+    
+    
+    // MARK: - 키패드 올라왔을 경우, 빈화면 터치했을 때 키패드 내림
+    func setViewOnClick(){
+        let onTouchListener = UITapGestureRecognizer(target: self, action: #selector(endEdit))
+        self.view.addGestureRecognizer(onTouchListener)
+    }
+    
+    @objc func endEdit(){
+        self.view.endEditing(true)
     }
     
     

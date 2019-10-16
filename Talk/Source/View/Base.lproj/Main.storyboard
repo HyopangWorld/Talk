@@ -158,10 +158,9 @@
                                 <state key="normal" backgroundImage="arrow.up.circle.fill" catalog="system"/>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7yh-vC-shC">
-                                <rect key="frame" x="20" y="808" width="320" height="34"/>
+                                <rect key="frame" x="20" y="808" width="324" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="34" id="Uv5-Kd-dbf"/>
-                                    <constraint firstAttribute="width" constant="320" id="lFp-dn-jVf"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -267,6 +266,7 @@
                             <constraint firstItem="1gW-yv-Plv" firstAttribute="centerY" secondItem="7yh-vC-shC" secondAttribute="centerY" id="5Nl-0k-iTI"/>
                             <constraint firstItem="Qxo-2Y-e4f" firstAttribute="bottom" secondItem="7yh-vC-shC" secondAttribute="bottom" constant="20" id="EjY-A9-ehz"/>
                             <constraint firstItem="Qxo-2Y-e4f" firstAttribute="trailing" secondItem="6C5-rQ-jGh" secondAttribute="trailing" id="IfH-LF-hhc"/>
+                            <constraint firstItem="1gW-yv-Plv" firstAttribute="leading" secondItem="7yh-vC-shC" secondAttribute="trailing" constant="10" id="Izj-m1-bOF"/>
                             <constraint firstItem="7yh-vC-shC" firstAttribute="leading" secondItem="Qxo-2Y-e4f" secondAttribute="leading" constant="20" id="biQ-jM-K0r"/>
                             <constraint firstItem="7yh-vC-shC" firstAttribute="top" secondItem="6C5-rQ-jGh" secondAttribute="bottom" constant="10" id="qbJ-O1-9nu"/>
                             <constraint firstItem="6C5-rQ-jGh" firstAttribute="top" secondItem="Qxo-2Y-e4f" secondAttribute="top" id="t7u-9G-KK5"/>
@@ -300,7 +300,7 @@
                                 </constraints>
                             </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sfr-es-f9a" customClass="HoshiTextField" customModule="TextFieldEffects">
-                                <rect key="frame" x="25" y="474" width="364" height="50"/>
+                                <rect key="frame" x="25" y="455" width="364" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="nIh-aK-weo"/>
                                 </constraints>
@@ -316,7 +316,7 @@
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="UserName" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bSp-iY-9O5" customClass="HoshiTextField" customModule="TextFieldEffects">
-                                <rect key="frame" x="25" y="560" width="364" height="50"/>
+                                <rect key="frame" x="25" y="541" width="364" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="VZP-cG-j0c"/>
                                 </constraints>
@@ -332,7 +332,7 @@
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mTi-a4-syL" customClass="HoshiTextField" customModule="TextFieldEffects">
-                                <rect key="frame" x="25" y="630" width="364" height="50"/>
+                                <rect key="frame" x="25" y="611" width="364" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="EGz-sr-Xgo"/>
                                 </constraints>
@@ -348,7 +348,7 @@
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zGA-hk-tVe">
-                                <rect key="frame" x="25" y="710" width="364" height="50"/>
+                                <rect key="frame" x="25" y="691" width="364" height="50"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="E71-Xw-qBl"/>
@@ -358,7 +358,7 @@
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h6a-LY-3tk">
-                                <rect key="frame" x="25" y="781" width="364" height="50"/>
+                                <rect key="frame" x="25" y="762" width="364" height="50"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="wna-p6-8Wm"/>
@@ -373,6 +373,7 @@
                             <constraint firstItem="gpk-X7-Xow" firstAttribute="trailing" secondItem="mTi-a4-syL" secondAttribute="trailing" constant="25" id="04w-xS-k41"/>
                             <constraint firstItem="mTi-a4-syL" firstAttribute="top" secondItem="bSp-iY-9O5" secondAttribute="bottom" constant="20" id="6B2-gL-moe"/>
                             <constraint firstItem="gpk-X7-Xow" firstAttribute="trailing" secondItem="h6a-LY-3tk" secondAttribute="trailing" constant="25" id="7Eq-5J-KPD"/>
+                            <constraint firstItem="gpk-X7-Xow" firstAttribute="bottom" secondItem="h6a-LY-3tk" secondAttribute="bottom" constant="50" id="FBj-c0-Yzz"/>
                             <constraint firstItem="gpk-X7-Xow" firstAttribute="trailing" secondItem="sfr-es-f9a" secondAttribute="trailing" constant="25" id="MSl-OG-JXx"/>
                             <constraint firstItem="h6a-LY-3tk" firstAttribute="leading" secondItem="gpk-X7-Xow" secondAttribute="leading" constant="25" id="NBk-Yr-XEg"/>
                             <constraint firstItem="GHX-6x-dgQ" firstAttribute="centerX" secondItem="UTP-JK-SdJ" secondAttribute="centerX" id="Scr-De-GoC"/>
@@ -380,7 +381,6 @@
                             <constraint firstItem="gpk-X7-Xow" firstAttribute="trailing" secondItem="bSp-iY-9O5" secondAttribute="trailing" constant="25" id="Xs2-tk-c80"/>
                             <constraint firstItem="bSp-iY-9O5" firstAttribute="top" secondItem="sfr-es-f9a" secondAttribute="bottom" constant="36" id="YBl-Eu-7tw"/>
                             <constraint firstItem="bSp-iY-9O5" firstAttribute="leading" secondItem="gpk-X7-Xow" secondAttribute="leading" constant="25" id="aNf-cV-eLg"/>
-                            <constraint firstItem="sfr-es-f9a" firstAttribute="top" secondItem="GHX-6x-dgQ" secondAttribute="bottom" constant="110" id="czX-Ea-s6K"/>
                             <constraint firstItem="gpk-X7-Xow" firstAttribute="trailing" secondItem="zGA-hk-tVe" secondAttribute="trailing" constant="25" id="ff3-Eh-vRD"/>
                             <constraint firstItem="sfr-es-f9a" firstAttribute="leading" secondItem="gpk-X7-Xow" secondAttribute="leading" constant="25" id="jjo-XN-suq"/>
                             <constraint firstItem="mTi-a4-syL" firstAttribute="leading" secondItem="gpk-X7-Xow" secondAttribute="leading" constant="25" id="nwy-Or-V8o"/>

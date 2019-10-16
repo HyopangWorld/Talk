@@ -42,6 +42,8 @@ class SignupViewController: BaseViewController {
     }
     
     override func initSet() {
+        super.initSet()
+        
         photoView.isUserInteractionEnabled = true
         photoView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(imagePicker)))
         

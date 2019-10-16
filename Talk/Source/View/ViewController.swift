@@ -27,6 +27,8 @@ class ViewController: BaseViewController {
     }
     
     override func initSet(){
+        super.initSet()
+        
         remoteConfig = RemoteConfig.remoteConfig()
         let settings = RemoteConfigSettings()
         settings.minimumFetchInterval = 0

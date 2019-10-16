@@ -32,6 +32,8 @@ class ChatViewController: BaseViewController {
     }
     
     override func initSet() {
+        super.initSet()
+        
         uid = Auth.auth().currentUser?.uid
         
         checkChatRoom()
